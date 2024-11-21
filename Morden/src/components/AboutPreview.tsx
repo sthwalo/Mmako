@@ -1,4 +1,4 @@
-import { Award, Users } from 'lucide-react';
+import { Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function AboutPreview() {
@@ -8,7 +8,7 @@ export function AboutPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80"
+              src="img/TracyM.jpeg"
               alt="Dr. Tracy Mmako"
               className="rounded-lg shadow-lg"
             />

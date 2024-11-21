@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Vite build
+dist/
+
+# Package lock
+package-lock.json
+
+# Environment variables
+.env
+
+# Node modules
+.vscode/
+
+# ESLint cache
+.eslintcache
+

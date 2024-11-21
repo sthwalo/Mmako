@@ -1,14 +1,16 @@
 import { Brain } from 'lucide-react';
 
-export function Hero() {
+export function Hero() { 
   return (
     <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white">
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80"
-          alt="Medical background"
-          className="w-full h-full object-cover opacity-20"
-        />
+        <div className="w-full h-full object-cover opacity-20">
+          <img
+            src="img/Door.jpeg"
+            alt="Dr. Mmako"
+            className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+          />
+        </div>
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="md:w-2/3">
@@ -33,6 +35,7 @@ export function Hero() {
               href="/services"
               className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-colors"
             >
+
               Our Services
             </a>
           </div>

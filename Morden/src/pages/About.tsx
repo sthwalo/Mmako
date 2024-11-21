@@ -16,7 +16,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80"
+              src="img/Tracy-.png"
               alt="Dr. Tracy Mmako"
               className="rounded-lg shadow-lg w-full"
             />

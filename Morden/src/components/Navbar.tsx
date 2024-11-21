@@ -1,6 +1,8 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
+
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +14,29 @@ export function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="https://images.unsplash.com/photo-1624727828489-a1e03b79bba8" 
+                src="img/Logo.jpeg" 
                 alt="Dr. MT Mmako Logo" 
                 className="h-12 w-auto"
               />
             </Link>
           </div>
-          
+
+          {/* Social Media Icons */}
+          <div className="hidden md:flex items-center space-x-4 mx-auto">
+            <a href="https://www.facebook.com/share/13zuXPmLWm/?mibextid=LQQJ4d" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+              <FaFacebookF />
+            </a>
+            <a href="https://www.instagram.com/drtracymmako?igsh=ejd4MWFpbjZ1aDkx&utm_source=qr" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+              <FaInstagram />
+            </a>
+            <a href="https://www.linkedin.com/in/dr-tracy-mmako-052a16328/" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+              <FaLinkedinIn />
+            </a>
+            <a href="https://www.tiktok.com/@drtracymmako?_t=8qEmDR2OWwv&_r=1" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+              <FaTiktok />
+            </a>
+          </div>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-700 hover:text-[#00A86B] transition-colors">Home</Link>
@@ -29,14 +47,28 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Navigation Button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile Navigation Button and Social Media Icons */}
+          <div className="md:hidden flex items-center justify-between w-full">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-[#00A86B] focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
+            <div className="flex items-center space-x-4">
+              <a href="https://www.facebook.com/share/13zuXPmLWm/?mibextid=LQQJ4d" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+                <FaFacebookF />
+              </a>
+              <a href="https://www.instagram.com/drtracymmako?igsh=ejd4MWFpbjZ1aDkx&utm_source=qr" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+                <FaInstagram />
+              </a>
+              <a href="https://www.linkedin.com/in/dr-tracy-mmako-052a16328/" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+                <FaLinkedinIn />
+              </a>
+              <a href="https://www.tiktok.com/@drtracymmako?_t=8qEmDR2OWwv&_r=1" className="text-gray-700 hover:text-[#00A86B] transition-colors">
+                <FaTiktok />
+              </a>
+            </div>
           </div>
         </div>
       </div>
